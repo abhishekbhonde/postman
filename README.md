@@ -1,6 +1,6 @@
-# Courier
+# Postman
 
-A Postman-style API client built with Go and React. Live at [courier.abhishekk.xyz](https://courier.abhishekk.xyz).
+A Postman-style API client built with Go and React. Live at [courier.abhishekk.xyz](https://postman.abhishekk.xyz).
 
 Requests are sent from the Go backend, so there are no CORS issues, and you get real timing (DNS, TCP, TLS, TTFB).
 
@@ -18,7 +18,7 @@ Requests are sent from the Go backend, so there are no CORS issues, and you get 
 Requires Go 1.26+ and Node 20+.
 
 ```sh
-make build && ./bin/courier -open   # http://localhost:7777
+make build && ./bin/postman -open   # http://localhost:7777
 make dev                            # dev mode with hot reload on :5173
 make test                           # run all tests
 ```
@@ -26,9 +26,9 @@ make test                           # run all tests
 ## Deploy
 
 - **Backend (Render):** uses `render.yaml` and `backend/Dockerfile`. Set these environment variables:
-  - `COURIER_TOKEN`: the access token
-  - `COURIER_ALLOW_HOSTS`: your Render hostname
-  - `COURIER_ALLOW_ORIGINS`: your frontend URL(s)
+  - `POSTMAN_TOKEN`: the access token
+  - `POSTMAN_ALLOW_HOSTS`: your Render hostname
+  - `POSTMAN_ALLOW_ORIGINS`: your frontend URL(s)
 - **Frontend (Vercel):** root directory `frontend`. `vercel.json` forwards `/api` to Render.
 
 When hosted, the UI asks for the access token once and remembers it.
