@@ -1,6 +1,6 @@
 # Postman
 
-A Postman-style API client built with Go and React. Live at [courier.abhishekk.xyz](https://postman.abhishekk.xyz).
+A Postman-style API client built with Go and React. Live at [courier.abhishekk.xyz](https://courier.abhishekk.xyz).
 
 Requests are sent from the Go backend, so there are no CORS issues, and you get real timing (DNS, TCP, TLS, TTFB).
 
